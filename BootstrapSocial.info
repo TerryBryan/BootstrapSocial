@@ -1,4 +1,4 @@
-; $Id: BoostrapSocialBloc.info,v 1.0.0.0 2011/02/09 10:11:15 HenrikJepsen Exp $
+; $Id: BoostrapSocial.info,v 1.0.0.0 2011/02/09 10:11:15 HenrikJepsen Exp $
 name = "Bootstrap Social Block"
 description = "A block with links to social sites"
 core = "7.x"
