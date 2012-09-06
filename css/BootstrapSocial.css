@@ -24,6 +24,22 @@
   visibility:hidden;
 }
 
+#BootstrapSocialList > li#BSDelicious > a{
+  background-image: url('../images/delicious.png');
+}
+
+#BootstrapSocialList > li#BSDelicious > a:hover{
+  background-image: url('../images/hover/delicious.png');
+}
+
+#BootstrapSocialList > li#BSDeviant > a{
+  background-image: url('../images/deviant-art.png');
+}
+
+#BootstrapSocialList > li#BSDeviant > a:hover{
+  background-image: url('../images/hover/deviant-art.png');
+}
+
 #BootstrapSocialList > li#BSTwitter > a{
   background-image: url('../images/twitter.png');
 }
