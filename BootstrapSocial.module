@@ -136,7 +136,12 @@ function BootstrapSocial_contents($which_block) {
       // Block content can be returned in two formats: renderable arrays
       // (as here) are preferred though a simple string will work as well.
       // Block content created through the UI defaults to a string.
-      $urls = '<ul id="BootstrapSocialList"><li>'.variable_get('BootstrapSocial_twitter_url_string',   t('A default value. This block was created at time')).'</li><li>'.variable_get('BootstrapSocial_facebook_url_string',   t('A default value. This block was created at time')).'</li></ul>';
+      $twitter = variable_get('BootstrapSocial_twitter_url_string',   t('null'));
+      $facebook = variable_get('BootstrapSocial_facebook_url_string',   t('null'));
+      $urls = '<ul id="BootstrapSocialList">
+                <li id="BSTwitter"><a href="'.$twitter.'" target="_blank"><span>Me on Twitter</span></a></li>
+                <li id="BSFacebook"><a href="'.$facebook.'" target="_blank"><span>Me on Facebook</span></a></li>
+              </ul>';
       return array('#markup' => $urls);
     case 'bs_empty':
       // It is possible that a block not have any content, since it is
